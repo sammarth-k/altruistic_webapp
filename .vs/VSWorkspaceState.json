@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Pages",
+    "\\wwwroot\\css",
+    "\\wwwroot\\lib\\bootstrap",
+    "\\wwwroot\\lib\\bootstrap\\dist",
+    "\\wwwroot\\lib\\bootstrap\\dist\\css",
+    "\\wwwroot\\lib\\jquery",
+    "\\wwwroot\\lib\\jquery-validation",
+    "\\wwwroot\\lib\\jquery-validation-unobtrusive"
+  ],
+  "SelectedNode": "\\Pages\\Index.cshtml.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,110 @@
+﻿@page
+
+@{
+    ViewData["Title"] = "Home page";
+}<script>
+    myDiv.InnerHtml = "hi";
+    </script>
+
+    <!DOCTYPE html>
+    <html xmlns="www.w3.org/1999/xhtml">
+
+    <head runat="server">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="http://altruistic.netlify.app/css/bootstrap.css">
+        <link rel="stylesheet" href="http://altruistic.netlify.app/dist/style.css">
+        <meta name="description" content="The one stop solution to verifying your protein's uniqueness">
+        <script src="http://altruistic.netlify.app/js/script.js"></script>
+        <title>Altruistic | Home</title>
+        <link rel="shortcut icon" type="image/x-icon" href="http://altruistic.netlify.app/img/favicon.ico" />
+        <link rel='shortcut icon' href='http://altruistic.netlify.app/img/favicon.ico' type='image/x-icon' />
+
+
+    </head>
+
+    <body>
+        <div id="header">
+            <a href="index.html"><img id="logo" src="http://altruistic.netlify.app/img/apple-touch-icon-72x72.png"></a>
+            <x id="icon" onclick="func()">☰</x>
+            <h1>Altruistic</h1>
+
+            <div id="nav">
+                <ul type="none">
+                    <a href="index.html"><img src="http://altruistic.netlify.app/img/apple-touch-icon-120x120.png"></a>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">The Team</a></li>
+                    <li><a href="dev.html">Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="main">
+            <div>
+                <div class="row">
+
+                    <div class="col-8">
+                        <h2>
+                            The one-stop solution to verifying your protein’s <x class="red">uniqueness</x>
+                        </h2>
+                        <p id="desc">
+                            Altruistic can help you determine whether your protein’s sequence can be patented by employing
+                            our
+                            unique <x class="red">algorithm</x> that searches the <x class="red">BLAST</x> database to
+                            compare
+                            your sequence with patented sequences
+                            using percentage integrity and determine whether you can <x class="red">patent</x> your sequence
+                            or
+                            not. All you have to do is enter your protein's <x class="red">FASTA</x> sequence and let us do
+                            all the work for you!
+                        </p>
+
+                    </div>
+                    <div class="col-4">
+                        <img src="http://altruistic.netlify.app/img/dna.svg" id="dna"
+                             class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+                             alt="">
+                    </div>
+                </div>
+                <div id="try" align="center">
+                    <h2>Try out Altruistic’s service here:</h2>
+                    <input id="fasta" type="text" placeholder="Enter protein’s FASTA sequence here">
+                    <button id="Button1" onclick="parseFasta">Submit</button>
+                </div>
+            </div>
+            <div id="result">
+                <div class="row">
+
+                    <div class="col-3">
+
+                        <img id="image" width="300px" src="">
+
+                    </div>
+                    <div class="col-9">
+                        <p id="results">
+                            Found patent with a
+                            <!--Insert Percentage Identity URL Here-->
+                            percentage identity of <insert id="percentageIdentity" class="red"></insert>
+                            <br>
+                            Altruistic Recommendation: <insert id="recommend" class="red"></insert>
+                            <br>
+                            <!--Insert Patent URL Here-->
+                            <x class="red">Patent URL:</x>
+                            <insert id="patent" class="red"></insert>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div id="myDiv" runat="server"></div>
+    </body>
+    
+    <div id="hiddendiv" runat="server"></div>
+    
+    <footer>
+        Created with <x class="red">❤</x> by Kevin Lou, Sammarth Kumar, Sujash Barman and Yash Gadhade
+    </footer>
+
+    </html>
